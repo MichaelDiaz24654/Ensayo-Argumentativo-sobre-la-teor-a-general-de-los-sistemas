@@ -1,0 +1,162 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[margin=2.54cm]{geometry}
+\usepackage{setspace}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault} % Usa Helvetica / Sans-Serif limpia estilo Liberation Sans
+\usepackage{indentfirst}
+\usepackage{enumitem}
+\usepackage{graphicx}
+
+% --- CONFIGURACIÓN DE FORMATO EXIGIDO ---
+\doublespacing % Interlineado doble
+\raggedright % Texto alineado a la izquierda (sin justificar), tal como lo dice APA7
+\setlength{\parindent}{1.27cm} % Sangría de primera línea (APA7)
+\setlength{\parskip}{0pt} % Evita espacio extra entre párrafos (mantiene sangría)
+
+\begin{document}
+
+\begin{titlepage}
+\thispagestyle{empty}
+
+\noindent
+\begin{center}
+	
+
+\IfFileExists{psm.jpg}{\includegraphics[width=2.5cm]{psm.jpg}}{\framebox[2.5cm][c]{PSM LOGO}}%
+\hspace{1em}%
+\raisebox{1cm}{%
+    \begin{tabular}{c} 
+        \textbf{Instituto Universitario Politécnico}\\
+        \textbf{“Santiago Mariño”}\\
+        \textbf{Extensión Maracay}\\
+        \textbf{Cátedra: Teoría de Sistemas}\\
+        \textbf{Sección: “C”}
+    \end{tabular}%
+}
+\end{center}
+\vfill
+\begin{center}
+    \section*{Fundamentos, evolución y propiedades de la Teoría General de Sistemas (TGS)}
+\end{center}
+\vspace{7cm}
+\begin{flushleft}
+    Alumno: Michael Díaz
+\end{flushleft}
+\begin{center}
+    \vfill
+    16, Octubre 2026
+\end{center}
+
+\end{titlepage}
+
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+%==========================================
+% CUERPO DEL ENSAYO
+%==========================================
+
+\section*{Introducción a la Teoría General de Sistemas}
+
+El paradigma científico tradicional, dominado durante siglos por el enfoque reduccionista y mecanicista heredado del cartesianismo y la física newtoniana, demostró ser insuficiente al enfrentar fenómenos complejos en las ciencias biológicas, sociales e informáticas. Bajo la visión reduccionista, el estudio de cualquier entidad requería su descomposición en las partes constituyentes más pequeñas posibles, asumiendo que la suma del comportamiento de estas partes individuales explicaba la totalidad del fenómeno. Sin embargo, la interconexión dinámica de los componentes en las estructuras contemporáneas exige un marco epistemológico holístico. Es en esta coyuntura donde emerge la Teoría General de Sistemas (TGS), no como una disciplina rígidamente delimitada, sino como un meta-lenguaje transdisciplinario capaz de formular principios y modelos generales aplicables a cualquier entidad conceptual o física estructurada.
+
+En el contexto de la Ingeniería de Sistemas y las Ciencias Computacionales, la TGS constituye la columna vertebral teórica para la modelación, arquitectura y optimización de software, infraestructura y procesamiento distribuido. Entender la entidad sintética o natural como una totalidad organizada donde las interacciones de sus partes determinan las propiedades emergentes es la base estratégica para resolver problemas complejos. La presente disertación analiza de manera rigurosa la génesis, evolución, taxonomías y propiedades fundamentales de la TGS, evaluando su impacto crítico en la tecnología moderna.
+\newpage
+\section*{Orígenes y Evolución Histórica de la TGS}
+
+Los cimientos conceptuales de la sistemática no surgieron de forma aislada en el siglo XX; sus antecedentes filosóficos se remontan a la antigüedad clásica. Filósofos como Aristóteles enunciaron la premisa intuitiva fundamental de que "el todo es más que la suma de sus partes". Siglos después, con el desarrollo de la termodinámica, la cibernética y la teoría de la información, se evidenció la necesidad de un marco de trabajo que unificara el aislamiento de las ciencias especializadas. 
+
+La crisis del modelo mecanicista se hizo aguda a principios del siglo XX. El mecanicismo asumía que las interacciones entre elementos eran puramente lineales y de causalidad simple (causa-efecto). No obstante, los avances en la biología orgánica demostraron que los organismos vivos no se comportaban como máquinas estáticas sometidas al equilibrio térmico cerrado, sino como entidades abiertas en constante intercambio de energía, materia e información con su entorno. Esta ruptura metodológica impulsó la transición desde el pensamiento analítico aislado hacia el pensamiento sistémico integrado.
+
+\section*{Etapas de la Evolución Sistémica}
+
+La evolución formal de la Teoría General de Sistemas puede estructurarse epistemológicamente en tres etapas fundamentales:
+
+\begin{enumerate}[leftmargin=1.27cm, label=\arabic*.]
+    \item \textbf{Etapa de Formulación Teórica Clásica (Décadas de 1930 - 1950):} Caracterizada por la estructuración de los conceptos biológicos de sistemas abiertos y la posterior institucionalización de la Sociedad para la Investigación de Sistemas Generales en 1954 por Ludwig Von Bertalanffy, Kenneth Boulding, Ralph Gerard y Anatol Rapoport. Se establecieron las bases conceptuales de la isomorfía sistémica.
+    
+    \item \textbf{Etapa de Integración Transdisciplinaria y Cibernética (Décadas de 1960 - 1970):} En esta fase se consolidó el cruce entre la TGS, la Cibernética de Norbert Wiener y la Teoría de la Información de Claude Shannon. Se introdujeron conceptos fundamentales como la retroalimentación (\textit{feedback}), los bucles de control y la autorregulación. La TGS comenzó a aplicarse formalmente a las ciencias de la computación, la ingeniería industrial y la administración de empresas.
+    
+    \item \textbf{Etapa de Complejidad Dinámica y Sistemas Adaptativos (Década de 1980 en adelante):} La TGS evolucionó hacia el estudio de los Sistemas Dinámicos No Lineales, la Teoría del Caos y los Sistemas Adaptativos Complejos (SAC). Se enfatizó el estudio de la autoorganización, la emergencia y las redes complejas, pilares indispensables para la inteligencia artificial contemporánea, el cómputo distribuido y el desarrollo de sistemas de software a gran escala.
+\end{enumerate}
+
+\section*{Aportes Claves de Ludwig Von Bertalanffy}
+
+El biólogo austriaco Ludwig Von Bertalanffy es reconocido unánimemente como el padre de la Teoría General de Sistemas. Su contribución fundamental residió en cuestionar el dogma reduccionista de la biología de su época y proponer la "Teoría de los Sistemas Abiertos". Bertalanffy argumentó que las leyes formales que rigen la conducta de los sistemas no dependen de la naturaleza específica de los elementos que los componen (sean células, moléculas, transistores o seres humanos), sino de la estructura de las relaciones e interconexiones entre ellos.
+
+Bertalanffy introdujo el concepto de \textit{Isomorfismo Formológico}, demostrando que existen principios matemáticos y estructurales idénticos que se repiten en campos del conocimiento aparentemente disímiles. Por ejemplo, las ecuaciones diferenciales que describen el crecimiento poblacional en biología son isomórficas a las que describen la difusión de calor en física o el flujo de datos en una red de telecomunicaciones. Al formular la TGS, Bertalanffy entregó a la comunidad científica un marco conceptual estándar para transferir modelos válidos entre disciplinas, eliminando la duplicación innecesaria de esfuerzos teóricos.
+
+\section*{Finalidad de la Teoría General de los Sistemas}
+
+La finalidad primordial de la TGS no es construir una "teoría del todo" absolutista o sustituir a las ciencias especiales, sino ofrecer un instrumento metodológico de síntesis y comunicación. Sus objetivos cardinales se resumen en:
+
+\begin{enumerate}[leftmargin=1.27cm, label=\alph*)]
+    \item Investigar el isomorfismo de conceptos, leyes y modelos en diferentes campos del saber para permitir transferencias metodológicas útiles entre disciplinas.
+    \item Favorecer el desarrollo de modelos teóricos simplificados en campos que carecen de abstracción formal.
+    \item Reducir la duplicación de esfuerzos teóricos mediante la unificación de terminologías científicas.
+    \item Promover la integración transdisciplinaria en la educación e investigación científica, permitiendo que ingenieros, biólogos y sociólogos compartan un lenguaje analítico común.
+\end{enumerate}
+\newpage
+\section*{Impacto de la TGS en las Ciencias Computacionales y la Ingeniería}
+
+En el ámbito de la Ingeniería de Sistemas y las Ciencias Computacionales, la TGS no es únicamente un marco teórico, sino la piedra angular sobre la que se erige toda la arquitectura informática contemporánea. El paso del desarrollo de programas monolíticos a la construcción de arquitecturas basadas en microservicios, sistemas distribuidos en la nube y paradigmas de programación orientada a objetos (POO) responde de forma directa a los principios de la TGS.
+
+Un sistema de software moderno es, por definición, un sistema abstracto, complejo e informacional. Conceptos computacionales como la encapsulación, la modularidad, la cohesión y el acoplamiento no son más que la materialización práctica de los límites sistémicos, subsistemas y relaciones estructurales descritos por Bertalanffy. Asimismo, la ingeniería de requerimientos y el análisis de sistemas aplican la TGS para delimitar el alcance del problema, comprender el contexto operativo (suprasistema) y garantizar que la entrada (\textit{input}) de datos sea procesada eficientemente para generar las salidas (\textit{output}) esperadas por la organización.
+
+\section*{Clasificación y Propiedades Fundamentales de los Sistemas}
+
+Para analizar formalmente cualquier objeto de estudio desde la perspectiva de la TGS, es imperativo dominar la taxonomía sistémica y las propiedades emergentes que gobiernan su comportamiento dinámico.
+\newpage
+\subsection*{Clasificación de los Tipos de Sistemas}
+
+Los sistemas pueden clasificarse bajo diversos criterios epistemológicos:
+
+\begin{enumerate}[leftmargin=1.27cm, label=\arabic*.]
+    \item \textbf{Según su relación con el entorno:}
+    \begin{itemize}[leftmargin=0.8cm, label=--]
+        \item \textit{Abiertos:} Mantienen un intercambio constante de materia, energía e información con su medio ambiente. Son adaptativos y exhiben comportamiento dinámico (ejemplo: un organismo vivo, una empresa, el software en ejecución).
+        \item \textit{Cerrados:} No intercambian materia con su entorno (teóricamente) y su intercambio energético es limitado. Tienden inevitablemente a la entropía máxima (ejemplo: una reacción química en un recipiente sellado e aislado).
+    \end{itemize}
+    
+    \item \textbf{Según su constitución o naturaleza:}
+    \begin{itemize}[leftmargin=0.8cm, label=--]
+        \item \textit{Concretos o Físicos:} Compuestos por elementos tangibles, hardware, equipos o componentes biológicos.
+        \item \textit{Abstractos o Conceptuales:} Compuestos por hipótesis, algoritmos, lenguajes de programación, modelos matemáticos y filosofías.
+    \end{itemize}
+    
+    \item \textbf{Según su origen:}
+    \begin{itemize}[leftmargin=0.8cm, label=--]
+        \item \textit{Naturales:} Orquestados por procesos biológicos o físicos sin intervención humana.
+        \item \textit{Artificiales:} Diseñados e implementados por el ser humano con un propósito específico (sistemas de software, redes eléctricas).
+    \end{itemize}
+\end{enumerate}
+\newpage
+\subsection*{Propiedades Fundamentales de los Sistemas}
+
+Las propiedades de un sistema son aquellas características emergentes que no se encuentran de forma aislada en sus componentes individuales, sino que nacen del patrón de organización colectiva:
+
+\begin{enumerate}[leftmargin=1.27cm, label=\roman*.]
+    \item \textbf{Sinergia:} Propiedad fundamental que dicta que la acción combinada de los componentes de un sistema produce un efecto total mayor que la suma de los efectos individuales. En ingeniería de software, un conjunto de algoritmos interconectados genera funcionalidades que ningún módulo aislado puede realizar.
+    
+    \item \textbf{Entropía y Neguentropía:} La entropía es la tendencia natural de todo sistema cerrado hacia el desorden, la degradación y la desorganización. Los sistemas abiertos contrarrestan la entropía mediante la neguentropía (entropía negativa), importando energía e información de su entorno para mantener la estructura y el orden.
+    
+    \item \textbf{Homeostasis:} Capacidad de un sistema para autorregularse y mantener un estado de equilibrio dinámico interno ante las perturbaciones o fluctuaciones del entorno externo. En arquitectura informacional, se refleja en los mecanismos de tolerancia a fallos y balanceo de carga.
+    
+    \item \textbf{Equifinalidad:} Principio que establece que un sistema abierto puede alcanzar el mismo estado final deseado partiendo de condiciones iniciales distintas y siguiendo caminos o trayectorias de procesamiento diferentes.
+    
+    \item \textbf{Recursividad:} Condición por la cual un sistema está compuesto por subsistemas que, a su vez, poseen características y propiedades sistémicas completas, formando una jerarquía de niveles (subsistema, sistema, suprasistema).
+    
+    \item \textbf{Emergencia:} Aparición de conductas o propiedades cualitativamente nuevas a un nivel determinado de complejidad, las cuales no eran predecibles a partir del análisis individual de las partes.
+\end{enumerate}
+
+\centering \section*{Conclusión}
+
+\begin{flushleft}
+	
+
+La Teoría General de Sistemas transformó definitivamente el pensamiento analítico contemporáneo al demostrar que la complejidad del mundo moderno no puede abordarse desarticulando sus partes. Desde sus orígenes biológicos formulados por Ludwig Von Bertalanffy hasta su aplicación en las ciencias de la computación, la TGS ofrece el lenguaje y las herramientas formales necesarias para diseñar, analizar y optimizar estructuras complejas. Para el profesional de las ciencias computacionales, el dominio del enfoque sistémico trasciende la simple teorización: constituye el marco mental indispensable para construir soluciones de software robustas, escalables y adaptables al entorno.
+\end{flushleft}
+\end{document}
